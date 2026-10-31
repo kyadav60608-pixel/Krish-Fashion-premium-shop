@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#c5a04b">
+  <meta name="description" content="KRISH FASHION - Discover premium fashion for Men, Women and Kids.">
+  <title>KRISH FASHION | Premium Fashion Store</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="javascript.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p>✦ ELEVATE YOUR STYLE — DISCOVER THE NEW COLLECTION ✦</p>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <button class="icon-btn menu-trigger" id="menuOpen" aria-label="Open menu">
+      <span>☰</span>
+    </button>
+
+    <a href="#" class="brand-logo">
+      <span class="brand-mark">K</span>
+      <span class="brand-name">KRISH <b>FASHION</b></span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#men" data-category="men">Men</a>
+      <a href="#women" data-category="women">Women</a>
+      <a href="#kids" data-category="kids">Kids</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button>
+      <a class="icon-btn orders-link" href="#orders" aria-label="My Orders">♧</a>
+      <button class="icon-btn cart-trigger" id="cartOpen" aria-label="Shopping cart">
+        ♧ <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Search Panel -->
+  <section class="search-panel" id="searchBox">
+    <div class="search-inner">
+      <span class="search-symbol">⌕</span>
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Search sarees, kurtis, shirts, shoes..."
+        autocomplete="off"
+        aria-label="Search products"
+      >
+      <button id="clearSearch" class="clear-search" aria-label="Clear search">✕</button>
+    </div>
+    <p class="search-hint">Search by product name or category</p>
+  </section>
+
+  <!-- Side Menu -->
+  <div class="menu-shade" id="shade"></div>
+
+  <aside class="side-menu" id="drawer">
+    <div class="side-menu-header">
+      <a href="#home" class="brand-logo">
+        <span class="brand-mark">K</span>
+        <span class="brand-name">KRISH <b>FASHION</b></span>
+      </a>
+      <button class="icon-btn" id="menuClose" aria-label="Close menu">✕</button>
+    </div>
+
+    <div class="menu-welcome">
+      <span class="small-gold-text">WELCOME TO</span>
+      <h2>Style Your<br>Personality.</h2>
+      <p>Discover your next favourite look.</p>
+    </div>
+
+    <nav class="side-nav">
+      <a href="#home">⌂ &nbsp; Home</a>
+      <a href="#collections">✧ &nbsp; All Collections</a>
+      <a href="#men" data-category="men">♙ &nbsp; Men</a>
+      <a href="#women" data-category="women">♧ &nbsp; Women</a>
+      <a href="#kids" data-category="kids">♡ &nbsp; Kids</a>
+      <a href="#orders">▤ &nbsp; My Orders</a>
+      <a href="#contact">☎ &nbsp; Contact Us</a>
+    </nav>
+
+    <div class="menu-footer">
+      <p>PREMIUM FASHION EXPERIENCE</p>
+      <span>KRISH FASHION © 2026</span>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- Home Hero -->
+    <section class="hero-section" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">THE ART OF DRESSING WELL</span>
+        <h1>Elegance Is<br><em>Always</em> In Style.</h1>
+        <p>
+          Discover thoughtfully selected fashion for every moment.
+          Find your style, express your personality.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#collections" class="gold-btn" id="shopNow">
+            EXPLORE COLLECTION <span>→</span>
+          </a>
+          <a href="#men" class="text-btn">Discover More ↗</a>
+        </div>
+
+        <div class="hero-note">
+          <span class="hero-note-line"></span>
+          <span>MEN &nbsp; · &nbsp; WOMEN &nbsp; · &nbsp; KIDS</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-frame">
+          <img
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1100&q=85"
+            alt="Fashion collection"
+          >
+        </div>
+        <div class="hero-floating-card">
+          <span class="floating-star">✦</span>
+          <div>
+            <strong>NEW COLLECTION</strong>
+            <small>Find your signature style</small>
+          </div>
+        </div>
+        <div class="hero-round-label">K<br>F</div>
+      </div>
+    </section>
+
+    <!-- Trust Highlights -->
+    <section class="benefits-strip">
+      <div class="benefit-item">
+        <span>✧</span>
+        <div>
+          <strong>CURATED STYLE</strong>
+          <small>Handpicked collections</small>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <span>◇</span>
+        <div>
+          <strong>QUALITY FOCUS</strong>
+          <small>Style meets comfort</small>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <span>♡</span>
+        <div>
+          <strong>PERSONAL STYLE</strong>
+          <small>Fashion for everyone</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections -->
+    <section class="collections-section section-padding" id="collections">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EXPLORE OUR WORLD</span>
+          <h2>Shop By <em>Collection</em></h2>
+        </div>
+        <p>Find the perfect look for every occasion.</p>
+      </div>
+
+      <div class="collection-grid">
+
+        <a href="#men" class="collection-card men-card" data-category="men">
+          <img
+            src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&q=85"
+            alt="Men's fashion collection"
+          >
+          <div class="collection-overlay">
+            <span>01 / COLLECTION</span>
+            <h3>MEN</h3>
+            <p>Discover Men's Style ↗</p>
+          </div>
+        </a>
+
+        <a href="#women" class="collection-card women-card" data-category="women">
+          <img
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=85"
+            alt="Women's fashion collection"
+          >
+          <div class="collection-overlay">
+            <span>02 / COLLECTION</span>
+            <h3>WOMEN</h3>
+            <p>Discover Women's Style ↗</p>
+          </div>
+        </a>
+
+        <a href="#kids" class="collection-card kids-card" data-category="kids">
+          <img
+            src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=800&q=85"
+            alt="Kids fashion collection"
+          >
+          <div class="collection-overlay">
+            <span>03 / COLLECTION</span>
+            <h3>KIDS</h3>
+            <p>Discover Kids' Style ↗</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products-section section-padding" id="men">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">HANDPICKED FOR YOU</span>
+          <h2>Featured <em>Products</em></h2>
+        </div>
+        <a href="#allProducts" class="view-all-link" id="allProducts">
+          VIEW ALL PRODUCTS →
+        </a>
+      </div>
+
+      <div class="category-tabs">
+        <button class="category-tab active" data-category="all">All</button>
+        <button class="category-tab" data-category="men">Men</button>
+        <button class="category-tab" data-category="women">Women</button>
+        <button class="category-tab" data-category="kids">Kids</button>
+      </div>
+
+      <div class="listing-header">
+        <h3 id="listingTitle">All Collections</h3>
+        <span id="resultCount">Explore our collection</span>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <!-- Products will be inserted by javascript.js -->
+      </div>
+
+      <div class="empty-state" id="empty" hidden>
+        <span>⌕</span>
+        <h3>No Products Found</h3>
+        <p>Try another search or explore a different collection.</p>
+      </div>
+    </section>
+
+    <!-- Premium Banner -->
+    <section class="editorial-banner">
+      <div class="editorial-image">
+        <img
+          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1400&q=85"
+          alt="Fashion editorial collection"
+        >
+      </div>
+      <div class="editorial-content">
+        <span class="eyebrow">THE KRISH EDIT</span>
+        <h2>Make Every<br>Moment <em>Memorable.</em></h2>
+        <p>
+          Great style is not about following every trend.
+          It is about finding what feels right for you.
+        </p>
+        <a href="#collections" class="gold-btn">EXPLORE THE EDIT →</a>
+      </div>
+    </section>
+
+    <!-- My Orders -->
+    <section class="orders-section section-padding" id="orders">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">YOUR SHOPPING JOURNEY</span>
+          <h2>My <em>Orders</em></h2>
+        </div>
+        <p>Keep track of your shopping enquiries.</p>
+      </div>
+
+      <div class="orders-container" id="ordersContainer">
+        <div class="orders-empty">
+          <span>▤</span>
+          <h3>No Orders Yet</h3>
+          <p>Your order history will appear here after you place an order.</p>
+          <a href="#collections" class="gold-btn">START SHOPPING →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <div>
+        <span class="eyebrow">WE ARE HERE TO HELP</span>
+        <h2>Let's Talk <em>Fashion.</em></h2>
+        <p>Have a question about a product or your order? Contact us.</p>
+      </div>
+      <div class="contact-actions">
+        <a href="https://wa.me/918738084554" target="_blank" rel="noopener" class="contact-btn">
+          WhatsApp Us ↗
+        </a>
+        <a href="tel:+918738084554" class="contact-btn secondary">
+          Call Us ↗
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo">
+          <span class="brand-mark">K</span>
+          <span class="brand-name">KRISH <b>FASHION</b></span>
+        </a>
+        <p>Discover your style. Celebrate your individuality.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>EXPLORE</h4>
+        <a href="#home">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#orders">My Orders</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>COLLECTIONS</h4>
+        <a href="#men" data-category="men">Men</a>
+        <a href="#women" data-category="women">Women</a>
+        <a href="#kids" data-category="kids">Kids</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>CONTACT</h4>
+        <a href="https://wa.me/918738084554" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="tel:+918738084554">Call Us</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 KRISH FASHION. All rights reserved.</p>
+      <span>MADE WITH STYLE ✦</span>
+    </div>
+  </footer>
+
+  <!-- Cart Overlay -->
+  <div class="cart-shade" id="cartShade"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <div>
+        <span class="eyebrow">YOUR SELECTION</span>
+        <h2>Shopping Bag</h2>
+      </div>
+      <button class="icon-btn" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <span>♧</span>
+        <h3>Your Bag Is Empty</h3>
+        <p>Discover something you love.</p>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <div class="subtotal-row">
+        <span>Subtotal</span>
+        <strong id="subtotal">₹0</strong>
+      </div>
+      <p class="cart-note">Final price, availability and delivery details will be confirmed before ordering.</p>
+      <button class="gold-btn checkout-btn" id="checkout">
+        ORDER ON WHATSAPP →
+      </button>
+    </div>
+  </aside>
+
+  <!-- Floating WhatsApp -->
+  <a
+    href="https://wa.me/918738084554"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat on WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path fill="currentColor" d="M16 .5A15.4 15.4 0 0 0 2.7 23.7L.5 31.5l8-2.1A15.5 15.5 0 1 0 16 .5Zm0 28.2a12.7 12.7 0 0 1-6.5-1.8l-.5-.3-4.8 1.3 1.3-4.7-.3-.5A12.7 12.7 0 1 1 16 28.7Zm7-9.5c-.4-.2-2.1-1-2.5-1.1-.3-.1-.6-.2-.8.2-.3.4-1 1.1-1.2 1.3-.2.2-.4.3-.8.1-.4-.2-1.5-.6-2.9-1.8-1.1-1-1.8-2.1-2-2.5-.2-.4 0-.6.2-.8l.6-.7c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7l-1.1-2.6c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 3s1.2 3.5 1.4 3.8c.2.2 2.4 3.7 5.8 5.1.8.3 1.4.5 1.8.6.8.3 1.5.2 2.1.1.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.1-.4-.2-.8-.4Z"/>
+    </svg>
+  </a>
+
+  <!-- Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
